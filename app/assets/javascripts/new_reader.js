@@ -4,11 +4,13 @@ window.NewReader = {
   Views: {},
   Routers: {},
   initialize: function() {
-    var content = $('#content');
+    var sidebar = $('#sidebar')
+    var content = $('#main-pane');
+
     NewReader.feeds = new NewReader.Collections.Feeds();
     NewReader.feeds.fetch({
       success: function () {
-        new NewReader.Routers.Feeds(content);
+        new NewReader.Routers.Feeds(sidebar, content);
         Backbone.history.start();
       }
     });

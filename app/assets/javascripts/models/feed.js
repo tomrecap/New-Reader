@@ -15,5 +15,6 @@ NewReader.Models.Feed = Backbone.Model.extend({
     };
 
     return optionsObject;
-  }
+  },
+
 });

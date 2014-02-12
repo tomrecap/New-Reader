@@ -1,7 +1,7 @@
-NewReader.Views.FeedsIndex = Backbone.View.extend({
+NewReader.Views.FeedsSidebar = Backbone.View.extend({
 
   tagName: 'ul',
-  template: JST['feeds/index'],
+  template: JST['feeds/sidebar'],
   render: function () {
     var content = this.template();
     this.$el.html(content);
