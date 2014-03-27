@@ -1,15 +1,16 @@
-# Welcome to New Reader
+##Welcome to [New Reader](http://new-reader.herokuapp.com)
 
 This is an RSS reader, modeled on Google Reader. I built it while learning Backbone.js and CSS.
 
 (The Backbone code is in `/app/assets/javascripts`.)
 
-## Cool Features
+### Cool Features
 * Single-page app.
-* Pulls down all subscription data and posts via AJAX.
+* Pulls down all subscription data and posts via AJAX requests.
+* RESTful API built in Rails to serve data.
 * Uses Backbone router to enable deep linking to feeds and posts.
 
-## Planned Improvements
+### Planned Improvements
 * The interface has one or two bugs.
   * Specifically, when you click on a post title in the post list, the post will expand or contract.
   * After a post contracts, you can't click on it right away to re-expand; this only works if you click elsewhere first.
